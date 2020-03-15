@@ -1,0 +1,174 @@
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git status
+On branch branch1
+nothing to commit, working tree clean
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git log
+commit 252dd04ea54fc4ee51a4f6d785ab572e49b3ddb5 (HEAD -> branch1)
+Author: Y-49 <2096514526@qq.com>
+Date:   Sat Mar 14 16:47:13 2020 +0800
+
+    人体1.txt
+
+commit 9318041beee39e98905ad53908a389452f440649 (origin/master, origin/HEAD, master)
+Author: Y-49 <61932094+Y-49@users.noreply.github.com>
+Date:   Mon Mar 9 18:33:17 2020 +0800
+
+    Initial commit
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git push
+fatal: The current branch branch1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch1
+
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git push --set-upstream origin branch1
+fatal: HttpRequestException encountered.
+   ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Y-49/BT92.git/'
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git status
+On branch branch1
+nothing to commit, working tree clean
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git push
+fatal: The current branch branch1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch1
+
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git push --set-upstream origin branch1
+fatal: HttpRequestException encountered.
+   ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 904 bytes | 904.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/Y-49/BT92/pull/new/branch1
+remote:
+To https://github.com/Y-49/BT92.git
+ * [new branch]      branch1 -> branch1
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git status
+On branch branch1
+Your branch is up to date with 'origin/branch1'.
+
+nothing to commit, working tree clean
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git log
+commit 252dd04ea54fc4ee51a4f6d785ab572e49b3ddb5 (HEAD -> branch1, origin/branch1)
+Author: Y-49 <2096514526@qq.com>
+Date:   Sat Mar 14 16:47:13 2020 +0800
+
+    人体1.txt
+
+commit 9318041beee39e98905ad53908a389452f440649 (origin/master, origin/HEAD, master)
+Author: Y-49 <61932094+Y-49@users.noreply.github.com>
+Date:   Mon Mar 9 18:33:17 2020 +0800
+
+    Initial commit
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git pull
+fatal: HttpRequestException encountered.
+   ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 540 bytes | 24.00 KiB/s, done.
+From https://github.com/Y-49/BT92
+ * [new branch]      branch2    -> origin/branch2
+Already up to date.
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git merge branch1
+Updating 9318041..252dd04
+Fast-forward
+ "\344\272\272\344\275\2231.txt" | 91 +++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 91 insertions(+)
+ create mode 100644 "\344\272\272\344\275\2231.txt"
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git push
+fatal: HttpRequestException encountered.
+   ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/Y-49/BT92.git
+   9318041..252dd04  master -> master
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git pull
+Already up to date.
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git merge branch2
+merge: branch2 - not something we can merge
+
+Did you mean this?
+        origin/branch2
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git merge origin/branch2
+CONFLICT (add/add): Merge conflict in 人体1.txt
+Auto-merging 人体1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master|MERGING)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      "\344\272\272\344\275\2231.txt"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master|MERGING)
+$ git add .
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master|MERGING)
+$ git commit -m "人体1.t"
+[master 15a9747] 人体1.txt
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 610 bytes | 610.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Y-49/BT92.git
+   252dd04..15a9747  master -> master
+
+钢铁@DESKTOP-6LR6C5B MINGW64 ~/Desktop/分支 code/BT92 (master)
+$
